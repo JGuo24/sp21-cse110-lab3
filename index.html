@@ -6,16 +6,114 @@
         <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
-        
+        <style>
+        p {
+            color: blue; /* Set text color to blue */
+        }
+        p {
+            font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+        }
+        </style>
+
         <header> <b>This is my Journal for Lab 2.</b></header>
+
+        <style>
+        p {
+            color: rgb(0,0,0); /* Set text color to black */
+        }
+        </style>
+
         <main>
-            <nav><a href="https://www.theraleighregister.com/microsoft-discord-2021.html">Link to a webpage using nav.</a>/nav>
-            <h1>Journal Entries</h1>
+            <style>
+
+                .box {
+                    background-color: #96c4ec;
+                }
+                p {
+                    color: #FF00FF; /* Set text color to magenta */
+                }
+            </style>
+            <nav><a href="https://www.theraleighregister.com/microsoft-discord-2021.html">Link to a webpage using nav.</a></nav>
+            <style>
+                p {
+                    color: hsl(0,0,0); /* Set text color to black. End of color. */
+                }
+            </style>
+            <style>
+                .wrapper{
+                    font-size: 1em
+                }
+                .px {
+                    width: 200px;
+                }
+
+                .vw {
+                  width: 10vw;
+                }
+
+                .em {
+                  width: 10rem;
+                }
+                .pk {
+                    width: 5cm;
+                }
+                .ok {
+                    width: 3in;
+                }
+                
+            </style>
+            <div class="wrapper">
+                <div class="box px"><h1>Journal Entries</h1></div>
+                <div class="box vw">Welcome to the Journal</div>
+                <div class="box em">Just playing with some sizes</div>
+                <div class="box pk">Just playing with some sizes: 5 cm</div>
+                <div class="box ok">Just playing with some sizes: 3 in</div>
+            </div>
+            
 		    <section>
 		        <h2>April 9th, 2021</h2>
+                <style>
+                    p{
+                        color: black;
+                    }
+                </style>
 		        <p>Today is Friday, my <b>least</b> busy day of the school week! This means that there <br>is only one day until the end of the week! Sadly, this means that all my work will eventually be due over the weekend :(.  Here is a list of things that I may need to do: <p>
 		        <p><strong>This paragraph uses a strong tag</strong></p>
 			    <div class="my-list">
+                <style>
+                    p, 
+                    ul {
+                        position: relative;
+                        border: 2px solid rebeccapurple;
+                                padding: .5em;
+                    }
+
+                    .block,
+                    li {
+                      border: 2px solid blue;
+                      padding: .5em;
+                    }
+
+                     ul {
+                      display: flex;
+                      list-style: none;
+                    }
+
+                    .block {
+                      display: block;
+                      display: inline;
+                    }      
+                    .box{
+                        position: static;
+                        margin-top: 5px;
+                        max-width: 500px;
+                        width: 350px;
+                        height: 50px;
+                        margin: 10px;
+                        padding: 25px;
+                        border: 5px solid black;
+                    }
+                </style>
 			    <h3>My List:</h3>
 			    <ul>
 			    	<li>First CSE110 Meeting!</li>
@@ -58,8 +156,49 @@
 		    </section>
 		    <section>
 		    <h2>April 11th, 2021</h2>
+            <style>
+                .container {
+                    display: flex;
+                    order: 5;
+                    flex-direction:row;
+                    flex-wrap: wrap;
+
+                }
+            </style>
 		    <p> Today will be a sad day.  There is so much homework to do but at least I am more motivated <br>by my deadlines :(. Here is a list of things that I have to do before the end of the day:</p>
-		    <div class="my-list">
+		    <style>
+                @media screen and (min-width: 900px) {
+                    article {
+                          padding: 1rem 3rem;
+                    }
+                }
+            </style>
+            
+            <style>
+                .item-a {
+                    grid-area: header;
+                }
+                .item-b {
+                     grid-area: main;
+                }
+                .item-c {
+                     grid-area: sidebar;
+                }
+                .item-d {
+                  grid-area: footer;
+                }
+
+                .container {
+                display: grid;
+                 grid-template-columns: 50px 50px 50px 50px;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "header header header header"
+                    "main main . sidebar"
+                    "footer footer footer footer";
+                }
+            </style>
+            <div class="my-list">
 		    	<h3>List of Highlights:</h3>
 		    	<ol>
 		    		<li>Finish my CSE110 Lab</li>
@@ -112,6 +251,11 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
+                    <style>
+                        button:hover{
+                            color: blue;
+                        }
+                    </style>
                     <label for="Button">A BUTTON!</label>
                     <button type="button">Click Me!</button>
 
