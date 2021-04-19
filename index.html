@@ -21,6 +21,9 @@
         p {
             color: rgb(0,0,0); /* Set text color to black */
         }
+        h1, h2 {
+            background-color: yellowgreen;
+        }
         </style>
 
         <main>
@@ -31,6 +34,9 @@
                 }
                 p {
                     color: #FF00FF; /* Set text color to magenta */
+                }
+                a[href="https://www.theraleighregister.com/microsoft-discord-2021.html"]{
+                    color: cyan;
                 }
             </style>
             <nav><a href="https://www.theraleighregister.com/microsoft-discord-2021.html">Link to a webpage using nav.</a></nav>
@@ -120,6 +126,19 @@
 			    	<li>Study Econ for test!</li>
 			    	<li>Start looking at Poli28 stuff.</li>
 			    </ul>
+                <style>
+                    
+                    li {
+                        list-style-type: disc;
+                    }
+
+                    li li {
+                      list-style-type: circle;
+                    }                    
+                    ul.block > li  {
+                        margin: 2em;
+                    }
+                </style>
 		        </div>
 		    <p>And <i>of course</i>, save some time for the boys later tonight for the ranked climb :) <p>
 		    </section>
@@ -201,6 +220,7 @@
             <div class="my-list">
 		    	<h3>List of Highlights:</h3>
 		    	<ol>
+                    
 		    		<li>Finish my CSE110 Lab</li>
 		    		<li>Finish Poli28 Discussion board stuff</li>
 		    		<li>Finish my CSE110 Review quiz</li>
@@ -212,6 +232,17 @@
                 <summary>Details tab</summary>
                 <p>Elements pictured above may or may not be real :).</p>
               </details>
+              <style>
+                  #fname{
+                      background-color: red;
+                  }
+                  #text ~ p {
+                      color: purple;
+                  }
+                  #radio + #checkbox{
+                      color: teal;
+                  }
+              </style>
             <form>
                 <fieldset>
                     <label for="fname">First name:</label><br>
@@ -233,6 +264,11 @@
                     <textarea id="textinput" name="textinput" rows="4" cols="50">
                         Type in here.
                     </textarea>
+                    <style>
+                        *{
+                            color: black;
+                        }
+                    </style>
                     <label for="sanity">Choose your sanity from the list:</label><br>
                     <input list="levels" name="level" id="level">
                     <datalist id="levels">
